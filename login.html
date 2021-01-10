@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+
+    <div class="form">
+        <!--Uses nav bar to create tabs structure-->
+        <div class="tabs">
+            <!--default active tab is set to Log In-->
+            <a class="active">Log In</a> 
+            <!--clicking on the Sign Up tab leads to the signup.html document-->
+            <a class="tab" href="signup.html">Sign Up</a>
+        <div>
+
+        <!--creates a form where clicking the login button leads to the checkUser.php document-->
+        <form method="POST" action="checkUser.php" name="login">
+            <!--creates the content for the Log In tab-->
+            <div id="login" class="tab-content">
+                <h1>Login to my website</h1>
+                
+                <!--username input, which is required by user before clicking login-->
+                <label for="uname">Username</label><br>
+                <input type="text" name="uname" id="uname" required><br><br>
+
+                <!--password input, which is required by user before clicking login-->
+                <label for="pass">Password</label><br>
+                <input type="password" name="pass" id="pass" required><br><br>
+
+                <!--Login button-->
+                <input type="submit" value="LOGIN" class="button">
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
