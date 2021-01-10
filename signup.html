@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+
+    <div class="form">
+        <!--Uses nav bar to create tabs structure-->
+        <div class="tabs">
+            <!--clicking on the Log In tab leads to the login.html document-->
+            <a class="tab" href="login.html">Log In</a>
+            <!--default active tab is set to Sign Up-->
+            <a class="active">Sign Up</a>
+        </div>
+
+        <!--creates a form where clicking the sign up button leads to the checkUser.php document-->
+        <form method="POST" action="checkUser.php" name="signup">
+            <!--creates the content for the Sign Up tab-->
+            <div id="signup" class="tab-content">
+                <h1>Sign up for my website</h1>
+
+                <!--username input, which is required by user before clicking sign up-->
+                <label for="fname">First Name</label><br>
+                <input type="text" id="fname" name="fname" required><br><br>
+
+                <!--last name input, which is required by user before clicking sign up-->
+                <label for="lname">Last Name</label><br>
+                <input type="text" id="lname" name="lname" required><br><br>
+
+                <!--username input, which is required by user before clicking sign up-->
+                <label for="uname">Username</label><br>
+                <input type="text" id="uname" name="uname" required><br><br>
+
+                <!--email input, which is required by user before clicking sign up-->
+                <label for="email">Email</label><br>
+                <input type="email" id="email" name="email" required="email"><br><br>
+
+                <!--password input, which is required by user before clicking sign up-->
+                <label for="pass">Password</label><br>
+                <input type="password" id="pass" name="pass" required><br><br>
+                
+                <!--Sign up button-->
+                <input type="submit" value="SIGN UP" class="button">
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
